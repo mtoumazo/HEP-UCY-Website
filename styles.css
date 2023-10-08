@@ -1,0 +1,57 @@
+body {
+font-family: 'Monda', sans-serif;
+background: black;
+}
+
+body::before {
+content: "";
+background-image: url("images/background.jpg");
+background-size: cover;
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+opacity: 0.30;
+}
+
+#hep-logo {
+width: 220px;
+padding:10px;
+}
+
+#cern-logo {
+max-width: 90px;
+padding:10px;
+object-fit: contain;
+}
+
+#ucyph-logo {
+height: 105px;
+padding:10px;
+}
+
+.hero {
+margin-top: 50px;
+color: white;
+font-size: 30px;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+color: white;
+background: black;
+}
+
+.other-logos {
+display: flex;
+}
+
+.menu-item {
+margin-top: 20px;
+font-size: 24px;
+padding: 10px 50px;
+}
+
+
