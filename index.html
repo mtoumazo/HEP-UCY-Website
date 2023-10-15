@@ -1,33 +1,66 @@
+<!DOCTYPE html>
 <html>
 
-<head>
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
-</head>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Orbitron:wght@400;800&display=swap" rel="stylesheet">
+		<script type = "text/javascript" src="tabs.js"> </script>
+	</head>
 
 
-<body>
+	<body>
 
-<div class="header">
-<img id="hep-logo" src="images/hep-ucy-logo.png" alt="Logo of High Energy Physics Group at University of Cyprus">
-<div class="menu-item"> Home </div>
-<div class="menu-item"> Research </div>
-<div class="menu-item"> Members </div>
-<div class="menu-item"> Publications </div>
-<div class="menu-item"> Events </div>
-<div class="menu-item"> Contact </div>
-<div class = "other-logos">
-<img id="cern-logo" src="images/cern-logo.png" alt="Logo of CERN">
-<img id="ucyph-logo" src="images/ucy-logo.png" alt="Logo of Department of Physics University of Cyprus">
-</div>
-</div>
+		<div class="header">
+			<img id="hep-logo" src="images/hep-ucy-logo.png" alt="Logo of High Energy Physics Group at University of Cyprus">
+			<button class="menu-item" onclick="openPage('home', this)" id="defaultOpen"> Home </button>
+			<button class="menu-item" onclick="openPage('research', this)"> Research </button>
+			<button class="menu-item"> Members </button>
+			<button class="menu-item"> Publications </button>
+			<button class="menu-item"> Events </button>
+			<button class="menu-item"> Contact </button>
+			<div class = "other-logos">
+				<img id="cern-logo" src="images/cern-logo.png" alt="Logo of CERN">
+				<img id="ucyph-logo" src="images/ucy-logo.png" alt="Logo of Department of Physics University of Cyprus">
+			</div>
+		</div>
 
 
-<div class="hero">
-	This is a HEP Website
-</div>
-</body>
+		<div id="home" class="tabcontent">
+			<img id="detector-tracks" src="images/detector-tracks-cut.png" alt="Image of the detector tracks">
+			<div id="home-text"> 
+				<h3> Welcome to the Home Page of the <br>
+				<span class="bold"> Experimental High Energy Physics Group </span> at the <span class="bold">University of Cyprus</span>! </h3>
+
+				<p>
+					At the forefront of scientific discovery, our group is dedicated to unraveling the mysteries of the universe
+					through cutting-edge research in high-energy physics. Nestled in the heart of the Mediterranean, our team of passionate
+					researchers, faculty, and students collaborates on groundbreaking experiments that explore the fundamental forces and 
+					particles that govern the cosmos. 
+				</p>
+
+				<p>
+					With a rich history of scientific achievement and innovation, our group pushes the boundaries of human knowledge,
+					striving to answer some of the most profound questions in physics. From the smallest subatomic particles to the
+					largest structures in the universe, we delve into the unknown to expand our understanding of the fundamental 
+					building blocks of nature.
+				</p>
+
+				<p>	
+					Explore our website to learn more about our research projects, discover the brilliant minds behind our discoveries,
+					and stay updated on the latest developments in the world of high-energy physics. Join us on this exciting journey 
+					as we unlock the secrets of the universe, one experiment at a time.
+				</p>
+			</div>
+		</div>
+
+		
+		
+		<div id="research" class="tabcontent">
+			<h3> This is the Research Tab </h3>
+		</div>
+
+	</body>
 
 </html>

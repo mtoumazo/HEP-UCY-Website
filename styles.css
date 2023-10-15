@@ -1,57 +1,128 @@
-body {
-font-family: 'Monda', sans-serif;
-background: black;
+body::before {
+	content: "";
+	background-image: url("images/background.jpg");
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.40;
 }
 
-body::before {
-content: "";
-background-image: url("images/background.jpg");
-background-size: cover;
-position: absolute;
-top: 0px;
-right: 0px;
-bottom: 0px;
-left: 0px;
-opacity: 0.30;
+body {
+	font-family: 'Monda', sans-serif;
+	background: black;
+	margin:0px;
 }
 
 #hep-logo {
-width: 220px;
-padding:10px;
+	width: 220px;
+	padding:10px;
 }
 
 #cern-logo {
-max-width: 90px;
-padding:10px;
-object-fit: contain;
+	max-width: 90px;
+	padding:10px;
+	object-fit: contain;
+	position:relative;
 }
 
 #ucyph-logo {
-height: 105px;
-padding:10px;
+	height: 105px;
+	padding:10px;
+	position:relative;
 }
 
-.hero {
-margin-top: 50px;
-color: white;
-font-size: 30px;
+#detector-tracks {
+	width: 100%;
+	height: 100%;
+	max-width: 750px;
+	margin: 0px;
+	padding:0px;
+	position:relative;	
 }
 
 .header {
-display: flex;
-justify-content: space-between;
-color: white;
-background: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	background: rgba(105, 105, 105, .2);
+	position:relative;
 }
 
 .other-logos {
-display: flex;
+	display: flex;
+	align-items: center;
+	position:relative;
 }
 
 .menu-item {
-margin-top: 20px;
-font-size: 24px;
-padding: 10px 50px;
+	font-family: 'Monda', sans-serif;
+	color: #fbfaf5;
+	#margin-top: 20px;
+	font-size: 25px;
+	float: left;
+	border: none;
+	outline: none;
+	background: none;
+	width: 25%;
+	cursor: pointer;
+	margin: 30px;	
+}
+
+.menu-item:hover {
+	color: #287D89;
+	font-size: 30px;
+  
+}
+
+h3 {
+	color: #FFFAF0;
+	font-weight: normal;
+	line-height: 50px;
+	margin-bottom: 60px;
+	text-shadow: 0 0 10px black;
+
+}
+
+p {
+	font-size: 25px;
+	margin-bottom: 40px;
+	text-shadow: 0 0 10px black;
+
+		
+}
+
+.bold {
+	font-weight: bold;
 }
 
 
+.tabcontent {
+	display: none;
+}
+
+#home {
+	display: flex;
+	margin-top: 50px;
+	color: #D3D3D3; #A19A88;
+	font-size: 30px;
+	position: relative;
+}
+
+#home-text {
+	padding:50px;
+	display: block;
+	# justify-content:center;
+	text-align: center;
+	text-shadow: 0 0 10px black;
+}
+
+#research {
+	#display: flex;
+	margin-top: 50px;
+	color: #D3D3D3; #A19A88;
+	font-size: 30px;
+	position: relative;
