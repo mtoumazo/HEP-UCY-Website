@@ -1,0 +1,37 @@
+.row {
+    display: flex;
+	position:relative;
+    # width: 33.3%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.column {
+    display: block;
+	position:relative;
+    width: 33.3%;
+    padding: 60px;
+    margin: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+
+.members-photos {
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
+
+.member-info {\
+    font: #FFFAF0;
+    text-align: center;
+    position: relative;
+    
+}
+
+.member-title {
+    font: white;
+    font-size: 18px;    
+}

@@ -99,6 +99,23 @@ body {
   
 }
 
+h1 {
+	color: #FFFAF0;
+	font-weight: normal;
+	line-height: 50px;
+	margin-bottom: 60px;
+	text-shadow: 0 0 10px black;
+}
+    
+h2 {
+	color: #FFFAF0;
+	font-weight: normal;
+	line-height: 50px;
+	margin-bottom: 60px;
+	text-shadow: 0 0 10px black;
+ 
+}
+    
 h3 {
 	color: #FFFAF0;
 	font-weight: normal;
