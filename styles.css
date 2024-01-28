@@ -2,18 +2,22 @@ body::before {
 	content: "";
 	background-image: url("images/background.jpg");
 	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	position: absolute;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
 	opacity: 0.40;
+    width: 100%;
+    height: 100%;
 }
 
 body {
 	font-family: 'Monda', sans-serif;
 	background: black;
-	margin:0px;
+	margin:0 auto;
 }
 
 #hep-logo {
@@ -95,8 +99,6 @@ body {
 	color: #287D89;
 	font-size: 20px;
 	#text-decoration: underline;
-
-  
 }
 
 h1 {
